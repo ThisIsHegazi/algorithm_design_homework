@@ -5,3 +5,4 @@
 - [correlation](https://github.com/ThisIsHegazi/algorithm_design_homework/tree/main/correlation)
 - [insertion sort](https://github.com/ThisIsHegazi/algorithm_design_homework/tree/main/insertion_sort)
 - [merge sort](https://github.com/ThisIsHegazi/algorithm_design_homework/tree/main/merge_sort)
+- [binary search](https://github.com/ThisIsHegazi/algorithm_design_homework/tree/main/binary_search)
