@@ -1,14 +1,14 @@
 # merge sort then edit
-def merge_sort(arr: list, start, end):
+def segregate(arr: list, start, end):
     if start >= end:
         return
     midpoint = (start + end) // 2
-    merge_sort(arr, start, midpoint)
-    merge_sort(arr, midpoint + 1, end)
-    merge_arr(arr, start, midpoint, end)
+    segregate(arr, start, midpoint)
+    segregate(arr, midpoint + 1, end)
+    merge(arr, start, midpoint, end)
 
 
-def merge_arr(arr, start, mid, end):
+def merge(arr, start, mid, end):
     i = 0
     j = 0
     k = start
@@ -35,7 +35,7 @@ def merge_arr(arr, start, mid, end):
         j += 1
 
 
-lst = [1, -2, 3, -4, -9, 5, -4, 5, 500, -200]
+lst = [6, -5, 12, 10, -9, -1]
 print(lst)
-merge_sort(lst, 0, len(lst) - 1)
+segregate(lst, 0, len(lst) - 1)
 print(lst)
