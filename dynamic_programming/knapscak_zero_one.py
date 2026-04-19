@@ -1,3 +1,4 @@
+# get the solution
 items = [
     {"name": "#1", "weight": 1, "profit": 4},
     {"name": "#2", "weight": 3, "profit": 9},
@@ -23,3 +24,16 @@ for i in range(n):
             dp[i].append(dp[i - 1][j])
 print(dp)
 print(dp[n - 1][max_weight])
+
+# get the items of solution
+chosen = []
+
+i = n - 1
+j = max_weight
+while j > 0 and i > 0:
+    if dp[i][j] > dp[i - 1][j]:
+        chosen.append(items[i]["name"])
+        j -= items[i]["weight"]
+    else:
+        i -= 1
+print(chosen)
